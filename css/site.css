@@ -1,0 +1,664 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #343233;
+}
+
+.conte {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 580px) {
+  .conte {
+    padding: 0 2rem;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 54px;
+  color: #FFD157;
+}
+
+.conte h2 {
+  font-size: 42px;
+  font-family: 'Bitter', serif;
+  color: #8D8273;
+}
+
+.conte p {
+  margin: 20px 0;
+  color: #00b894;
+  line-height: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+
+
+button {
+  outline: none;
+  border: none;
+  margin: 18px 0;
+  padding: 20px 40px;
+  background: #FFD152;
+  font-family: Roboto;
+  color: #282627;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+i {
+  font-size: 42px;
+  letter-spacing: 14px;
+}
+
+
+/* BARRE DE NAVIGATION */
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: #343233;
+  position: fixed;
+  text-align: right;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+  color: #ffeaa7;
+  transition: 1s;
+}
+
+nav a:hover {
+  color: #a29bfe;
+}
+
+nav a#toggle-btn {
+  display: none;
+  text-align: center;
+}
+
+
+/* RESPONSIVE DU nAVIGATEUR */
+@media screen and (max-width: 580px) {
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #d63031;
+    color: #8D8273;
+  }
+
+  nav a:hover {
+    color: #a29bfe;
+  }
+
+  nav a#toggle-btn:after {
+    content: "";
+    transform: rotate(-90deg);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#toggle-btn {
+    display: block;
+    background: #282627;
+    color: #8D8273;
+    width: 100%;
+    position: relative;
+  }
+
+  .menu:before, .menu:after {
+    content: "";
+    display: table;
+  }
+
+  .menu:after {
+    clear: both;
+  }
+
+  .menu {
+    zoom: 1;
+  }
+}
+
+/* FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+/* BLOCK ORANGE : EDUCATION */
+
+.blocker {
+  display: block;
+  max-width: 550px;
+  background: #636e72;
+  margin: 0 auto 1em;
+  height: 200px;
+  position: relative;
+  border-right: .2em;
+  transform: perserve-3d;
+  text-align: center;
+  font-size: 70px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.Orange h2 {
+  text-align: center;
+}
+
+.blocker h2 {
+  font-family: 'Crete Round', serif;
+  color: #2d3436;
+  font-size: 55px;
+  text-align: center;
+}
+
+
+/* MON EDUCATION */
+
+.Educa {
+  min-height: 61vh;
+
+}
+.Educa h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #ff7675;
+}
+.Educa p {
+  text-align: center;
+  color: #576574;
+}
+
+/* FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MES COMPETENCES */
+
+
+.Compétences {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 67vh;
+  justify-content: space-around;
+  font-size: small;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.Compétences p {
+  font-size: 17px;
+  color: #b71540;
+}
+
+.Compétences img {
+  width: 60%;
+}
+.Compétences h2 {
+  font-size: 60px;
+  text-align: center;
+  margin: auto;
+  color: red;
+}
+.Compétences h3 {
+  font-family: consolas;
+  text-align: center;
+}
+
+/* CARTE  */
+
+.Compétences .carte {
+  position: relative;
+}
+
+/* PARTIE 1 : CARTE DU HAUTS */
+
+.Compétences .carte .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+.Compétences .carte .face.face1 {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  background: #343233;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+.Compétences .carte:hover .face.face1 {
+  background: #e74c3c;
+  transform: translateY(0);
+}
+
+.Compétences .carte .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8)
+}
+
+
+/*  */
+.Compétences .carte .face.face1 .Compétences {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.Compétences .carte:hover .face.face1 .Compétences {
+  opacity: 1;
+}
+.Compétences .carte:hover .face.face1 .Contentement img {
+  max-width: 100px;
+}
+
+.Compétences .carte .face.face2 .Contentement h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.Compétences .carte .face.face1 .Contentement p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.Compétences .carte .face.face2 .Contentement a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.Compétences .carte .face.face2 .Contentement a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* FIN  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOBBIES */
+
+
+.SuiteH {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+}
+.Hobbies {
+  text-align: center;
+  display: flex;
+}
+.Hobbies h2 {
+  color: #95a5a6;
+  font-size: 45px;
+}
+
+/* CARTES */
+
+.carte1 {
+  display: grid;
+  grid-template-rows: 167px 200px 40px;
+  grid-template-areas: "image" "texte";
+  width: 230px;
+  height: 330px;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+.carte-image {
+  grid-area: image;
+  background: url("../img/sf.jpeg");
+  background-repeat: round;
+
+}
+
+.carte1:hover {
+  background-color: #22a6b3;
+}
+
+/* IMAGE 2  */
+
+.carte2 {
+  display: grid;
+  grid-template-rows: 167px 200px 40px;
+  grid-template-areas: "image" "texte";
+  width: 230px;
+  height: 330px;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+}
+.carte-image2 {
+  background: url("../img/cer.png");
+  background-repeat: round;
+}
+
+
+.carte2:hover {
+  background-color: #f6e58d;
+}
+
+/* IMAGE 3  */
+
+.carte3 {
+  display: grid;
+  grid-template-rows: 167px 200px 40px;
+  grid-template-areas: "image" "texte";
+  width: 230px;
+  height: 330px;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+}
+.carte-image3 {
+  background: url("../img/pp.jpeg");
+  background-repeat: round;
+}
+
+.carte3:hover {
+  background-color: #16a085;
+}
+
+/* IMAGE 4  */
+
+.carte4 {
+  display: grid;
+  grid-template-rows: 167px 200px 40px;
+  grid-template-areas: "image" "texte";
+  width: 230px;
+  height: 330px;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+}
+.carte-image4 {
+  background: url("../img/cu.jpeg");
+  background-repeat: round;
+}
+
+.carte4:hover {
+  background-color: #f8c291;
+}
+
+/* TEXTE CARTE */
+
+.carte-texte h2{
+  grid-area: texte;
+  margin: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+.para p{
+  overflow: hidden;
+  margin:auto;
+  color: #ff7675;
+  font-size: 150%;
+}
+
+/* FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT  */
+
+.fin {
+  font-size: 45px;
+  text-align: center;
+  color: red;
+}
+
+/* CARTE PERSONNELLE */
+
+.Perso {
+
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Formas {
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: "";
+  transform-style: preserve-3d;
+  transition: 1s;
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.Formas:hover {
+  z-index: 100;
+}
+
+.Formas .Imagebox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+
+  z-index: 1;
+
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+
+.Imagebox:hover
+{
+  transform: rotateY(-180deg);
+  transition-timing-function: ease-out;
+}
+
+.Formas .Imagebox img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Description {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  color: yellow;
+}
+.Description h2 {
+  text-align: center;
+  color: #ff7675;
+}
+
+.Close {
+  text-align: center;
+}
+
+/* FIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOND DANSANT */
+
+
+.vague {
+  position: relative;
+  width: 100%;
+  height: 143px;
+  bottom: -166px;
+  left: 0;
+  background: url("../img/mo.png");
+  animation: animate 10s linear infinite;
+}
+
+.vague:before {
+  content: '';
+  width: 100%;
+  height: 143px;
+  background: url("../img/mo.png") ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  animation: animate-reverse 60s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+
+  }
+
+  75% {
+    background-position: 1100px;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    background-position: 1360px;;
+  }
+  100% {
+    background-position: 0;
+  }
+}
