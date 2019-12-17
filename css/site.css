@@ -753,34 +753,8 @@ i {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: red;
   transform: translateX(50deg);
   transition: .10s linear;
-}
-
-
-
-
-/* Position des 2 Petites Barres  */
-.Curri::before {
-  top: -4px;
-  left: 10%;
-}
-
-.Curri::after {
-  bottom: -4px;
-  right: 10%;
-}
-
-
-/* Rotation / Mouvement des Petites Barres  */
-
-.Curri::before {
-  left: 80%;
-}
-
-.Curri::after {
-  left: 80%;
 }
 
 /* FIN */
