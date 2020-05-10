@@ -233,6 +233,25 @@ i {
 
 /* EDUCATION */
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+
+
+
+
 .Educa {
   width: 100%;
   display: flex;
@@ -240,16 +259,65 @@ i {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
 }
+
+.groupe {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  color: #333;
+}
+
+.groupe h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 4px;
+  padding-bottom: 10px;
+}
+
+.pe {
+  float: left;
+  width: calc(100% / 3);
+  overflow: hidden;
+  padding: 40px 0;
+  border-radius: 5;
+}
+
+.pe img {
+  width: 120px;
+  height: 120px;
+}
+
+.p-name {
+  margin: 16px;
+  text-transform: uppercase;
+}
+
+
+
 .Educa h2 {
   text-align: center;
-  font-size: 24px;
   color: #ff7675;
 }
 .Educa p {
   text-align: center;
   color: #576574;
+}
+
+
+.info {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  float: right;
+  padding: 5px;
+  border: 1px solid #333;
 }
 
 /* FIN */
@@ -560,14 +628,14 @@ i {
 }
 
 .Formas {
+
   position: relative;
-  margin: 20px 0;
-  width: 300px;
-  height: 400px;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
   background: "";
   transform-style: preserve-3d;
   transition: 1s;
-  margin: auto;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
 }
 .Formas:hover {
@@ -581,11 +649,7 @@ i {
   border: 1px solid #000;
   box-sizing: border-box;
 
-  z-index: 1;
 
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transition: 1s;
 }
 
 .Imagebox:hover
@@ -608,14 +672,15 @@ i {
 }
 
 .Formas .Imagebox img {
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  animation: front -4.1s forwards ease-out;
-
+  border: 1px solid #000;
+  box-sizing: border-box;
+  /* z-index: 1; */
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 1s;
 }
 
 .Description {
@@ -675,7 +740,7 @@ i {
 
 /* CV PDF */
 
-.Curri {
+.curri {
 
   text-transform: uppercase;
   border: 4px solid;
@@ -695,7 +760,39 @@ i {
   margin: auto;
 }
 
-.Curri::before, .Curri::after {
+.curri::before, .Curri::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  transform: translateX(50deg);
+  transition: .10s linear;
+}
+
+/* FIN */
+
+.book {
+
+  text-transform: uppercase;
+  border: 4px solid;
+  position: relative;
+  display: block;
+  color: #60a3bc;
+  font-size: 16px;
+  text-decoration: none;
+  width: 200px;
+  font-weight: 700;
+top: 12px;
+ align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  font-family: cursive;
+  margin: auto;
+}
+
+.book::before, .book::after {
   content: "";
   position: absolute;
   width: 14px;
@@ -729,53 +826,4 @@ i {
 
 
 
-
 /* FOND DANSANT */
-
-
-.vague {
-  position: relative;
-  width: 100%;
-  height: 143px;
-  bottom: -166px;
-  left: 0;
-  background: url("../img/mo.png");
-  animation: animate 10s linear infinite;
-}
-
-.vague:before {
-  content: '';
-  width: 100%;
-  height: 143px;
-  background: url("../img/mo.png") ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.4;
-  animation: animate-reverse 60s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    background-position: 0;
-
-  }
-
-  75% {
-    background-position: 1100px;
-  }
-  100% {
-    background-position: 1360px;
-  }
-}
-
-@keyframes animate-reverse {
-  0% {
-    background-position: 1360px;;
-  }
-  100% {
-    background-position: 0;
-  }
-}
-
-/* FIN */
