@@ -138,23 +138,6 @@ nav a#toggle-btn {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section-hero {
   width: 100%;
 }
@@ -246,42 +229,6 @@ i {
 }
 
 
-
-/* BLOCK GREY : EDUCATION */
-
-.blocker {
-  display: block;
-  max-width: 550px;
-  background: #636e72;
-  margin: 0 auto 1em;
-  position: relative;
-  border-right: .2em;
-  transform: perserve-3d;
-  text-align: center;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.Orange h2 {
-  text-align: center;
-}
-
-.blocker h2 {
-  font-family: 'Crete Round', serif;
-  color: #2d3436;
-  font-size: 55px;
-  text-align: center;
-}
-
-/* RESPONSIVE DU nAVIGATEUR */
-@media screen and (max-width: 580px) {
-
-  .blocker {
-  inline-size= -webkit-fill-avaible;
-  }
-}
 
 
 /* EDUCATION */
