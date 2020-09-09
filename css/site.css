@@ -553,7 +553,7 @@ text-transform: uppercase;
   box-shadow: 45px 45px 45px rgb(0 0 0);
   z-index: 1;
   overflow: hidden;
-  background: url(../img/sf.jpeg);
+  background: url(../img/jq.jpg);
   transform: translate(-50%,-50%);
   padding: 100px;
   border: 5px solid #fff;
@@ -1016,14 +1016,14 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
   margin-bottom: 45px;
 }
 
-/* .book::before, .book::after {
+.book::before, .book::after {
 content: "";
 position: absolute;
 width: 14px;
 height: 4px;
 transform: translateX(50deg);
 transition: .10s linear;
-} */
+}
 
 /* FIN */
 
