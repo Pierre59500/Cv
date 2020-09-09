@@ -412,18 +412,18 @@ text-transform: uppercase;
 
 
 /*  */
-.exp .carte .face.face1 .Contentement {
+.exp .carte .face.face1 .contentement {
   opacity: 0.2;
   transition: 0.5s;
 }
-.exp .carte:hover .face.face1 .Contentement {
+.exp .carte:hover .face.face1 .contentement {
   opacity: 1;
 }
-.exp.carte:hover .face.face1 .Contentement img {
+.exp.carte:hover .face.face1 .contentement img {
   max-width: 100px;
 }
 
-.exp .carte .face.face2 .Contentement h3 {
+.exp .carte .face.face2 .contentement h3 {
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -432,13 +432,13 @@ text-transform: uppercase;
 
 }
 
-.exp .carte .face.face1 .Contentement p {
+.exp .carte .face.face1 .contentement p {
   margin: 0;
   padding: 0;
 }
 
 
-.exp .carte .face.face2 .Contentement a {
+.exp .carte .face.face2 .contentement a {
   margin: 20px 0 0;
   display: inline-block;
   text-decoration: none;
@@ -448,7 +448,7 @@ text-transform: uppercase;
   border: 1px solid #333;
 }
 
-.exp .carte .face.face2 .Contentement a:hover {
+.exp .carte .face.face2 .contentement a:hover {
   background: #333;
   color: #fff;
 }
@@ -600,7 +600,7 @@ text-transform: uppercase;
 
 /* creation d'un coeur  */
 
-.heart {
+.coupe {
 
   /* position: relative; */
   /* width: 50px; */
@@ -617,7 +617,7 @@ text-transform: uppercase;
 
 /* Création de la partie gauche et droite du coeur */
 
-.heart:before {
+.coupe:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -635,7 +635,7 @@ text-transform: uppercase;
 
 /* Création de la partie gauche et droite du coeur */
 
-.heart:after {
+.coupe:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -690,7 +690,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
   font-size: 60px;
   margin-top: 76px;
 }
-.Hobbies {
+.hobbies {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -698,7 +698,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
   justify-content: space-around;
   align-items: flex-start;
 }
-.Hobbies h2 {
+.hobbies h2 {
   color: #95a5a6;
   font-size: 45px;
 }
@@ -811,7 +811,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
   text-align: center;
   font-size: 12px;
 }
-.para p{
+.ls p{
   overflow: hidden;
   margin:auto;
   color: #ff7675;
