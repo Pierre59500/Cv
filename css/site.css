@@ -133,7 +133,7 @@ nav a#toggle-btn {
 
 
 
-.section-hero {
+.section-start {
   width: 100%;
 }
 
@@ -824,13 +824,6 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
 
 
 
-
-
-
-
-
-
-
 /* CONTACT  */
 
 .titre5 h2 {
@@ -893,7 +886,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
 
 }
 
-.format .Imagebox img {
+.format .imagebox img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -971,7 +964,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
 
 /* CV PDF */
 
-.curri {
+.curriculum {
 
   text-transform: uppercase;
   border: 4px solid;
@@ -991,7 +984,7 @@ transform: rotate(45deg) translate(10px,10px) scale(1);
   margin: auto;
 }
 
-.curri::before, .Curri::after {
+.curriculum::before, .Curri::after {
   content: "";
   position: absolute;
   width: 14px;
